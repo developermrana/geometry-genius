@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Geometry Genius/home</title>
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- main stylesheets -->
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="max-w-7xl mx-auto">
+        <header class="bg-blue-200 flex justify-between p-3">
+            <div>
+                <h1 class="text-3xl font-semibold">Interactive</h1>
+                <p class="text-lg font-semibold">Geometry Genius</p>
+            </div>
+            <div>
+                <button class="bg-blue-800 py-2 px-4 text-white rounded">
+                    <a href="blog.html">Blog</a> 
+                </button>
+            </div>
+        </header>
+        <!-- header end -->
+
+        <!-- Geometry Section  start-->
+        <main class="lg:flex mt-12 gap-4">
+            <section class="left-side  grid sm:grid-cols-2 lg:grid-cols-3 gap-2 lg:w-9/12">
+                <div class="card border p-4  text-center">
+                    <div class="text-center">
+                        <img class="inline-block
+                        " src="images/triangle.png" alt="triangle">
+                    </div>
+                    <h2 class="text-2xl font-semibold">Triangle</h2>
+                    <p class="">Area (A) = 0.5 <span>&times</span> b <span>&times</span> h</p>
+                    <div class="flex justify-center">
+                        <input id="triangle-base" class="bg-slate-100 inline-block w-6/12" type="number" name="" placeholder="base">
+                        <p class="px-2">cm</p>
+                        <input id="triangle-height" class="bg-slate-100 w-6/12" type="number" name="" placeholder="height">
+                    </div>
+                    <button id="triangle-calc" class="bg-blue-800 py-4 rounded-md block mx-auto w-full mt-6 text-white">Calculate</button>
+                </div> <!--triangle card end -->
+                <div class="card border p-4  text-center">
+                    <div class="text-center">
+                        <img class="inline-block
+                        " src="images/rectangle.png" alt="rectangle">
+                    </div>
+                    <h2 class="text-2xl font-semibold">Rectangle</h2>
+                    <p class="">Area (A) = w <span>&times</span> l</p>
+                    <div class="flex justify-center">
+                        <input id="rectangle-base" class="bg-slate-100 inline-block w-6/12" type="number" name="" placeholder="width">
+                        <p class="px-2">cm</p>
+                        <input id="rectangle-height" class="bg-slate-100 w-6/12" type="number" name="" placeholder="length">
+                    </div>
+                    <button id="rectangle-calc" class="bg-blue-800 py-4 rounded-md block mx-auto w-full mt-6 text-white">Calculate</button>
+                </div> <!-- rectangle card end -->
+                <div class="card border p-4  text-center">
+                    <div class="text-center">
+                        <img class="inline-block
+                        " src="images/parallelogram.png" alt="parallelogram">
+                    </div>
+                    <h2 class="text-2xl font-semibold">Parallelogram</h2>
+                    <p class="">Area (A) = b <span>&times</span> h</p>
+                    <div class="flex justify-center">
+                        <input id="parallelogram-base" class="bg-slate-100 inline-block w-6/12" type="number" name="" placeholder="b">
+                        <p class="px-2">cm</p>
+                        <input id="parallelogram-height" class="bg-slate-100 w-6/12" type="number" name="" placeholder="h">
+                    </div>
+                    <button id="parallelogram-calc" class="bg-blue-800 py-4 rounded-md block mx-auto w-full mt-6 text-white">Calculate</button>
+                </div> <!-- parallelogram card end -->
+                <div class="card border p-4  text-center">
+                    <div class="text-center">
+                        <img class="inline-block
+                        " src="images/rhombus.png" alt="rhombus">
+                    </div>
+                    <h2 class="text-2xl font-semibold">Rhombus</h2>
+                    <p class="">Area (A) = 0.5 <span>&times</span> d<sub>1</sub> <span>&times</span> d<sub>2</sub></p>
+                    <div class="flex justify-center">
+                        <input id="rhombus-base" class="bg-slate-100 inline-block w-6/12" type="number" name="" placeholder="d1">
+                        <p class="px-2">cm</p>
+                        <input id="rhombus-height" class="bg-slate-100 w-6/12" type="number" name="" placeholder="d2">
+                    </div>
+                    <button id="rhombus-calc" class="bg-blue-800 py-4 rounded-md block mx-auto w-full mt-6 text-white">Calculate</button>
+                </div> <!-- rhombus card end 4-->
+                <div class="card border p-4  text-center">
+                    <div class="text-center">
+                        <img class="inline-block
+                        " src="images/pentagon.png" alt="pentagon">
+                    </div>
+                    <h2 class="text-2xl font-semibold">Pentagon</h2>
+                    <p class="">Area (A) = 0.5 <span>&times</span> p <span>&times</span> b</p>
+                    <div class="flex justify-center">
+                        <input id="pentagon-base" class="bg-slate-100 inline-block w-6/12" type="number" name="" placeholder="p">
+                        <p class="px-2">cm</p>
+                        <input id="pentagon-height" class="bg-slate-100 w-6/12" type="number" name="" placeholder="b">
+                    </div>
+                    <button id="pentagon-calc" class="bg-blue-800 py-4 rounded-md block mx-auto w-full mt-6 text-white">Calculate</button>
+                </div> <!-- pentagon card end -->
+                <div class="card border p-4  text-center">
+                    <div class="text-center">
+                        <img class="inline-block
+                        " src="images/ellipse.png" alt="ellipse">
+                    </div>
+                    <h2 class="text-2xl font-semibold">Ellipse</h2>
+                    <p class="">Area (A) = <span>&#x3C0</span> <span>&times</span> a <span>&times</span> b</p>
+                    <div class="flex justify-center">
+                        <input id="ellipse-base" class="bg-slate-100 inline-block w-6/12" type="number" name="" placeholder="a">
+                        <p class="px-2">cm</p>
+                        <input id="ellipse-height" class="bg-slate-100 w-6/12" type="number" name="" placeholder="b">
+                    </div>
+                    <button id="ellipse-calc" class="bg-blue-800 py-4 rounded-md block mx-auto w-full mt-6 text-white">Calculate</button>
+                </div> <!-- ellipse card end 6-->
+            </section>
+            <!-- left side end -->
+
+            <!-- area calculation section start -->
+            <section class="right-side lg:w-3/12 border p-4">
+                <h2 class="text-xl font-semibold text-center underline mb-4">Area Calculation</h2>
+
+                <div class="calculate-result">
+                    <div id="triangle-result" class="text-center hidden mb-4">
+                        <p class="inline-block mr-3">Triangle<span id="triangle-area" class="ml-3">00</span>cm<sup>2</sup></p>
+                        <button class="bg-blue-800 rounded-md text-white p-1 inline-block">convert to m<sup>2</sup></button>
+                    </div><!-- triangle end-->
+                    <div id="rectangle-result" class="text-center hidden mb-4">
+                        <p class="inline-block mr-3">Rectangle<span id="rectangle-area" class="ml-3">00</span>cm<sup>2</sup></p>
+                        <button class="bg-blue-800 rounded-md text-white p-1 inline-block">convert to m<sup>2</sup></button>
+                    </div><!-- Rectangle end-->
+                    <div id="parallelogram-result" class="text-center hidden mb-4">
+                        <p class="inline-block mr-3">Parallelogram<span id="parallelogram-area" class="ml-3">00</span>cm<sup>2</sup></p>
+                        <button class="bg-blue-800 rounded-md text-white p-1 inline-block">convert to m<sup>2</sup></button>
+                    </div><!-- Parallelogram end-->
+                    <div id="rhombus-result" class="text-center hidden mb-4">
+                        <p class="inline-block mr-3">Rhombus<span id="rhombus-area" class="ml-3">00</span>cm<sup>2</sup></p>
+                        <button class="bg-blue-800 rounded-md text-white p-1 inline-block">convert to m<sup>2</sup></button>
+                    </div><!-- Rhombus end-->
+                    <div id="pentagon-result" class="text-center hidden mb-4">
+                        <p class="inline-block mr-3">Pentagon<span id="pentagon-area" class="ml-3">00</span>cm<sup>2</sup></p>
+                        <button class="bg-blue-800 rounded-md text-white p-1 inline-block">convert to m<sup>2</sup></button>
+                    </div><!-- Pentagon end-->
+                    <div id="ellipse-result" class="text-center hidden mb-4">
+                        <p class="inline-block mr-3">Ellipse<span id="ellipse-area" class="ml-3">00</span>cm<sup>2</sup></p>
+                        <button class="bg-blue-800 rounded-md text-white p-1 inline-block">convert to m<sup>2</sup></button>
+                    </div><!-- Ellipse end-->
+                </div>
+            </section>
+             <!-- area calculation section start -->
+        </main>
+    </div>
+    <!-- main js -->
+    <script src="script/script.js"></script>
+</body>
+</html>
